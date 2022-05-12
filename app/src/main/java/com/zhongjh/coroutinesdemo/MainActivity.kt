@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RetrofitActivity::class.java)
             startActivity(intent)
         }
+        findViewById<Button>(R.id.btnMvvm).setOnClickListener {
+            val intent = Intent(this, MvvmActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }
