@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FlowActivity::class.java)
             startActivity(intent)
         }
+        findViewById<Button>(R.id.btnFlow2).setOnClickListener {
+            val intent = Intent(this, com.zhongjh.coroutinesdemo.phone.flow2.FlowActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }
