@@ -4,11 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
-import com.zhongjh.coroutinesdemo.http.BannerApi
-import com.zhongjh.coroutinesdemo.http.retrofit.RetrofitClient
-import kotlinx.coroutines.MainScope
-import kotlinx.coroutines.launch
 
 /**
  * 这是搭配Retrofit演示的Demo
@@ -27,8 +22,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RetrofitActivity::class.java)
             startActivity(intent)
         }
-        findViewById<Button>(R.id.btnMvvm).setOnClickListener {
-            val intent = Intent(this, MvvmActivity::class.java)
+        findViewById<Button>(R.id.btnLiveData).setOnClickListener {
+            val intent = Intent(this, LiveDataActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.btnFlow).setOnClickListener {
+            val intent = Intent(this, FlowActivity::class.java)
             startActivity(intent)
         }
     }

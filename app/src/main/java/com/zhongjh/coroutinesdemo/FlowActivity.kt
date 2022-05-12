@@ -5,26 +5,22 @@ import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.zhongjh.coroutinesdemo.databinding.ActivityMvvmBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.MainScope
-import kotlinx.coroutines.NonCancellable.cancel
-import kotlinx.coroutines.cancel
+import com.zhongjh.coroutinesdemo.databinding.ActivityFlowBinding
 
 /**
  * 这是协程搭配Retrofit演示的Demo
  */
-class MvvmActivity : AppCompatActivity() {
+class FlowActivity : AppCompatActivity() {
 
-    private val mViewModel: MvvmModel by viewModels()
+    private val mViewModel: FlowModel by viewModels()
 
     lateinit var tvContent: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val dataBind: ActivityMvvmBinding = DataBindingUtil.setContentView(
+        val dataBind: ActivityFlowBinding = DataBindingUtil.setContentView(
             this,
-            R.layout.activity_mvvm
+            R.layout.activity_flow
         )
         dataBind.lifecycleOwner = this
         dataBind.vm = mViewModel
