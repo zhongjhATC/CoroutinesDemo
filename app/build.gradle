@@ -57,8 +57,14 @@ dependencies {
 
     // Mvvm所需的库
     api "androidx.activity:activity-ktx:1.4.0"
-    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
     api 'androidx.databinding:databinding-runtime:4.2.2'
+
+
+//    api "androidx.lifecycle:lifecycle-extensions:2.4.1"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+//    api "androidx.lifecycle:lifecycle-runtime:2.4.1"
+//    api "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
 
 
 }

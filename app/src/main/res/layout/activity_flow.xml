@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.zhongjh.coroutinesdemo.FlowModel" />
+            type="com.zhongjh.coroutinesdemo.phone.flow.FlowModel" />
 
     </data>
 

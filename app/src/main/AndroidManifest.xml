@@ -27,10 +27,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CoroutinesActivity" />
-        <activity android:name=".RetrofitActivity" />
-        <activity android:name=".LiveDataActivity" />
-        <activity android:name=".FlowActivity" />
+        <activity android:name=".phone.coroutines.CoroutinesActivity" />
+        <activity android:name=".phone.retrofit.RetrofitActivity" />
+        <activity android:name=".phone.livedata.LiveDataActivity" />
+        <activity android:name=".phone.flow.FlowActivity" />
         <activity android:name=".phone.flow2.FlowActivity" />
 
     </application>

@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.zhongjh.coroutinesdemo.LiveDataModel" />
+            type="com.zhongjh.coroutinesdemo.phone.livedata.LiveDataModel" />
 
     </data>
 

@@ -1,6 +1,5 @@
-package com.zhongjh.coroutinesdemo
+package com.zhongjh.coroutinesdemo.phone.livedata
 
-import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

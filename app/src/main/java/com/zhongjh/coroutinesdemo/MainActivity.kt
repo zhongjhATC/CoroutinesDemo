@@ -4,6 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.zhongjh.coroutinesdemo.phone.coroutines.CoroutinesActivity
+import com.zhongjh.coroutinesdemo.phone.flow.FlowActivity
+import com.zhongjh.coroutinesdemo.phone.livedata.LiveDataActivity
+import com.zhongjh.coroutinesdemo.phone.retrofit.RetrofitActivity
 
 /**
  * 这是搭配Retrofit演示的Demo

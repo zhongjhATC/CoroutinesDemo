@@ -1,10 +1,11 @@
-package com.zhongjh.coroutinesdemo
+package com.zhongjh.coroutinesdemo.phone.flow
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.zhongjh.coroutinesdemo.R
 import com.zhongjh.coroutinesdemo.databinding.ActivityFlowBinding
 
 /**

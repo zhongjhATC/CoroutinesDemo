@@ -1,15 +1,10 @@
-package com.zhongjh.coroutinesdemo
+package com.zhongjh.coroutinesdemo.phone.flow
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.zhongjh.coroutinesdemo.http.BannerApi
 import com.zhongjh.coroutinesdemo.http.retrofit.RetrofitClient
-import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.channels.ConflatedBroadcastChannel
-import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 

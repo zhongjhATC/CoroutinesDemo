@@ -1,20 +1,28 @@
-package com.zhongjh.coroutinesdemo
+package com.zhongjh.coroutinesdemo.phone.flowrxjava
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.activity.viewModels
+import androidx.annotation.WorkerThread
+import androidx.lifecycle.lifecycleScope
+import com.zhongjh.coroutinesdemo.R
 import com.zhongjh.coroutinesdemo.http.BannerApi
 import com.zhongjh.coroutinesdemo.http.retrofit.RetrofitClient
+import com.zhongjh.coroutinesdemo.phone.flow2.FlowModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 
 /**
  * 这是协程搭配Retrofit演示的Demo
  */
-class RetrofitActivity : AppCompatActivity(), CoroutineScope by MainScope() {
+class FlowRxjavaActivity : AppCompatActivity(), CoroutineScope by MainScope() {
 
+    private val mViewModel: FlowRxjavaModel by viewModels()
     lateinit var tvContent: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,10 +32,10 @@ class RetrofitActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         fetchData()
     }
 
+
     private fun fetchData() {
-        launch {
-            val a = RetrofitClient.get().create(BannerApi::class.java).json()
-            tvContent.text = a.errorCode.toString()
+        lifecycleScope.launch {
+            mViewModel.fetchData()
         }
     }
 
