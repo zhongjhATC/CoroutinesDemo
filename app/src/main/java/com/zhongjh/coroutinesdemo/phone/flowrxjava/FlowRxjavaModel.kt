@@ -48,6 +48,10 @@ class FlowRxjavaModel : ViewModel() {
     ) = flow {
         val value = RetrofitClient.get().create(BannerApi::class.java).json()
         emit(value.errorCode.toString())
-    }.onStart { onStart() }.onCompletion { onComplete() }.flowOn(Dispatchers.IO)
+    }.onStart {
+        onStart()
+    }.onCompletion {
+        onComplete()
+    }.flowOn(Dispatchers.IO)
 
 }
