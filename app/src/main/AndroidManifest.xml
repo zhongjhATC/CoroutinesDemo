@@ -32,6 +32,7 @@
         <activity android:name=".phone.livedata.LiveDataActivity" />
         <activity android:name=".phone.flow.FlowActivity" />
         <activity android:name=".phone.flow2.FlowActivity" />
+        <activity android:name=".phone.flowrxjava.FlowRxjavaActivity" />
 
     </application>
 
